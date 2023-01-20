@@ -71,7 +71,7 @@ nav ul li{
 .main-pic{
     height:420px;
     width:100%;
-    background-image: url(images/2imagecafe.jpg);
+    background-image: url(Images/2imagecafe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(50%);
