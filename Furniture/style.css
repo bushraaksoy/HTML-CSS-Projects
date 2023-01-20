@@ -1,0 +1,395 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: #E2E1DD;
+    padding: 28px 0 18px 0;
+    z-index: 9999;
+}
+
+.logo span{
+    font-weight: 900;
+}
+
+.logo{
+    font-size: 25px;
+    color: #000;
+    position: relative;
+    animation: myShake .5s linear 3;
+}
+
+@keyframes myShake{
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: -5px;
+    }
+}
+
+.header ul{
+    font-size: 12px;
+    gap:100px;
+}
+ .nav-items{
+    gap:25px;
+ }
+
+ .nav-items ul li{
+    position: relative;
+    cursor: pointer;
+    color: #000;
+ }
+
+.nav-items ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1.3px;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    transition: all 0.5s ease;
+}
+
+.nav-items ul li:hover:after{
+    width: 103%;
+    left: 0;
+}
+
+ .center{
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    
+ }
+
+.slider{
+    background: url('images/couch-pic1.jpg') no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding-top: 70px;
+}
+ .center h1{
+    font-size: 30px;    
+    font-weight: 700;
+    width: 290px;
+    position: relative;
+    z-index: 2;
+}
+ 
+ .center h1::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 108px;
+    right: 10px;
+    bottom: -90px;
+    border: solid 3px #000;
+    border-color: transparent transparent #FFCC29 transparent;
+    border-radius: 0 0 234px 20% / 43px;
+    transform: rotate(181deg);
+    z-index: -1;
+ }
+
+ .center p{
+    width: 310px;
+    text-transform: capitalize;
+    margin-right: 30px;
+
+ }
+ .center img{
+    position: relative;
+ }
+ .input-btn{
+    margin-top: 25px;
+    position: relative;
+    font-size: 12px;
+ }
+ .input-btn button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 8px 30px;
+    cursor: pointer;
+    z-index: 2;
+ }
+ .input-btn input{
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 15px;
+ }
+
+ /* second part */
+ .second-part{
+    padding: 50px 0;
+ }
+ .images-second{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+ }
+ .box{
+    position: relative;
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #EEEDEA;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+    padding-bottom: 20px;
+ }
+
+ .box::after{
+    position: absolute;
+    content: '';
+    border-radius: 16px;
+    padding: 6px 23px;
+    font-size: 13px;
+    font-weight: 100;
+    height: 0;
+    width: 0;
+    bottom: -15px;
+    left:25px;
+    color: #fff;
+    background-color: none;
+    cursor: pointer;
+    transition: all .2s linear;
+ }
+
+ .box:hover:after{
+    width: 110px;
+    height: 30px;
+    background-color: #85853F;
+    content: 'Shop Now';
+ }
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+.second-part h2::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 120px;
+    right: 986px;
+    bottom: -225px;
+    border: solid 3px #000;
+    border-color: transparent transparent #FFCC29 transparent;
+    border-radius: 0 0 323px 80% / 29px;
+    transform: rotate(181deg);
+    z-index: -1;
+}
+
+ .second-part-items{
+    display: flex;
+    flex-direction: column;
+ }
+ .under-images-second{
+    padding: 50px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .under-images-second h3{
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 10px;
+ }
+ .under-images-second img{
+    width: 400px;
+ }
+ .under-images-second h2{
+    font-size: 23px;
+ }
+ .right{
+    width:420px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0px 55px;
+    background-color: #E2E1DD;
+    border-radius: 10px;
+    justify-content: center;
+ }
+ .fa-circle-check{
+    font-size: 1.8em;
+ }
+ .rdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .left{
+    width:440px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 40px;
+ }
+/* dark part */
+.dark-part{
+    height: 300px;
+    background-color: #2D2D1F;
+}
+.third-part{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+.box1{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #EEEDEA;
+    position: absolute;
+    bottom: 0px;
+    right: 1.7px;
+}
+.table-tree{
+    position: relative;
+    width: 510px;
+}
+.table-tree img{
+    width: 410px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.words{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 350px;
+    justify-content: center;
+    align-items:flex-start;
+}
+.words h3{
+    font-size: 21px;
+    font-weight: 600;
+}
+.words p{
+    font-size: 15px;
+    word-spacing: 1.1px;
+}
+.explore-button{
+    padding: 6px 40px;
+    border: 1px solid #E1E1BB;
+    color: #E1E1BB;
+    background-color: none;
+    border-radius: 50px;
+    font-size: 12px;
+    width:200px;
+    cursor: pointer;
+}
+.explore-button:hover{
+    background-color: #E1E1BB;
+    color: #2D2D1F;
+    transition: all .3s ease;
+}
+/* Our Reviews */
+.our-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+    align-items: center;
+}
+.our-reviews h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.box2{
+    border-radius: 18px;
+    width: 310px;
+    border: 1.3px solid #2D2D1F;
+    padding: 25px 14px;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 13px;
+}
+.boxes{
+    gap: 30px;
+}
+.box2 h3{
+    font-size: 18px;
+}  
+.discount-image{
+    height: 340px;
+    width: 100%;
+    background: url(images/bedroom-image.png) no-repeat;
+    background-size: contain;
+    padding: 50px 60px;
+    flex-direction: column;
+    gap: 30px;
+}
+.discount-image h3{
+    color: white;
+    width: 300px;
+    font-size: 30px;
+}
+
+.fa-star{
+    color: #FFCC32;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #EEEDEA;
+}
+
+.footer-items h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+.footer-items ul li{
+    padding: 7px 0;;
+}
+.app-store{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.app-store img{
+    width: 120px;
+    margin-right: 110px;
+    cursor: pointer;
+}
