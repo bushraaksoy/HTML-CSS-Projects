@@ -4,7 +4,6 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-
 .container{
     max-width: 1180px;
     padding: 0 45px;
@@ -23,6 +22,8 @@ body{
     justify-content: space-between;
 }
 
+
+/* Navigation bar */
 .header{
     position: sticky;
     top: 0px;
@@ -39,7 +40,7 @@ body{
     font-size: 25px;
     color: #000;
     position: relative;
-    animation: myShake .5s linear 3;
+    animation: myShake .6s linear 10;
 }
 
 @keyframes myShake{
@@ -51,12 +52,25 @@ body{
     }
 }
 
-.header ul{
+.nav-items ul{
+    display: flex;
     font-size: 12px;
     gap:100px;
 }
  .nav-items{
     gap:25px;
+ }
+.nav-items ul li a{
+    color: #000 ;
+}
+ .navi{
+    cursor: pointer;
+ }
+ .fa-bars{
+    display: none ;
+ }
+ .navi:hover{
+    color: #91912c;
  }
 
  .nav-items ul li{
@@ -77,37 +91,40 @@ body{
 }
 
 .nav-items ul li:hover:after{
-    width: 103%;
+    width: 102%;
     left: 0;
 }
 
+/* End of navigation bar */
+
+
  .center{
-    display: flex;
     gap: 200px;
-    justify-content: space-between;
-    
  }
 
 .slider{
     background: url('images/couch-pic1.jpg') no-repeat;
     background-size: cover;
+    width: 100vw;
     height: 550px;
     padding-top: 70px;
 }
  .center h1{
     font-size: 30px;    
     font-weight: 700;
-    width: 290px;
+}
+
+.simple{
     position: relative;
     z-index: 2;
 }
  
- .center h1::after{
+ .simple::after{
     position: absolute;
     content: '';
     height: 100px;
     width: 108px;
-    right: 10px;
+    right: 0px;
     bottom: -90px;
     border: solid 3px #000;
     border-color: transparent transparent #FFCC29 transparent;
@@ -119,8 +136,6 @@ body{
  .center p{
     width: 310px;
     text-transform: capitalize;
-    margin-right: 30px;
-
  }
  .center img{
     position: relative;
@@ -129,6 +144,7 @@ body{
     margin-top: 25px;
     position: relative;
     font-size: 12px;
+    width: 275px;
  }
  .input-btn button{
     position: absolute;
@@ -155,8 +171,6 @@ body{
     padding: 50px 0;
  }
  .images-second{
-    display: flex;
-    justify-content: space-between;
     font-weight: 600;
     font-size: 15px;
  }
@@ -203,13 +217,17 @@ h2{
     font-weight: 600;
  }
 
-.second-part h2::after{
+ .categories{
+    position: relative;
+ }
+
+.categories::after{
     position: absolute;
     content: '';
     height: 100px;
     width: 120px;
-    right: 986px;
-    bottom: -225px;
+    right: -6px;
+    bottom: -95px;
     border: solid 3px #000;
     border-color: transparent transparent #FFCC29 transparent;
     border-radius: 0 0 323px 80% / 29px;
@@ -218,29 +236,22 @@ h2{
 }
 
  .second-part-items{
-    display: flex;
     flex-direction: column;
  }
  .under-images-second{
     padding: 50px 0;
     font-size: 15px;
-    display: flex;
-    justify-content: space-between;
  }
  .under-images-second h3{
     font-weight: 600;
     font-size: 15px;
     margin-left: 10px;
  }
- .under-images-second img{
-    width: 400px;
- }
  .under-images-second h2{
     font-size: 23px;
  }
  .right{
     width:420px;
-    display: flex;
     flex-direction: column;
     gap: 60px;
     padding: 0px 55px;
@@ -252,14 +263,12 @@ h2{
     font-size: 1.8em;
  }
  .rdiv{
-    display: flex;
     flex-direction: column;
     gap: 10px;
  }
 
  .left{
     width:440px;
-    display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px 40px;
@@ -270,8 +279,6 @@ h2{
     background-color: #2D2D1F;
 }
 .third-part{
-    display: flex;
-    justify-content: space-between;
     height: 300px;
 }
 .box1{
@@ -295,7 +302,6 @@ h2{
 }
 .words{
     color: white;
-    display: flex;
     flex-direction: column;
     gap: 30px;
     width: 350px;
@@ -327,11 +333,9 @@ h2{
 }
 /* Our Reviews */
 .our-reviews{
-    display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 50px 0;
-    align-items: center;
+    gap: 30px;
+    padding: 50px 0 0 0;
 }
 .our-reviews h3{
     font-size: 20px;
@@ -372,7 +376,7 @@ h2{
 }
 
 .footer{
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #EEEDEA;
 }
 
@@ -387,9 +391,9 @@ h2{
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+    padding-right: 25px;
 }
 .app-store img{
-    width: 120px;
-    margin-right: 110px;
+    width: 130px;
     cursor: pointer;
 }
