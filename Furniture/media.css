@@ -41,6 +41,10 @@
         width: 100vw;
         height: 585px;
         padding-top: 70px;
+<<<<<<< HEAD
+=======
+/*         background-position: center; */
+>>>>>>> a282a8c47cbc7cac11a914555801f2909ea38e78
     }
     .center{
         display: flex;
@@ -51,6 +55,13 @@
         font-size: 30px;    
         font-weight: 700;
         color: #000;
+    }
+    
+    .input-btn{
+    margin-top: 15px;
+    position: relative;
+    font-size: 12px;
+    width: 275px;
     }
 
     .input-btn{
