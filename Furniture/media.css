@@ -41,7 +41,7 @@
         width: 100vw;
         height: 585px;
         padding-top: 70px;
-        background-position: center;
+/*         background-position: center; */
     }
     .center{
         display: flex;
