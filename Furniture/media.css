@@ -54,6 +54,9 @@
         color: #000;
         text-shadow: 2px 2px 4px #fff;
     }
+    input-btn{
+        margin-top: 15px;
+    }
 
      .input-btn button{
         position: absolute;
