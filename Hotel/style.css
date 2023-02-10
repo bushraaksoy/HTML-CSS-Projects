@@ -1,0 +1,464 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+
+.container {
+  max-width: 1110px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.fxdc {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.body {
+  font-family: "Noto Serif Japaneese";
+}
+
+/* Header nav bar */
+
+.header {
+  padding: 25px 0 10px 0;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color: #faf9f5;
+  border-bottom: 1px solid #d6d0bc;
+}
+i {
+  color: #595959;
+}
+.nav_bar {
+  align-items: center;
+  justify-content: space-between;
+}
+.socials {
+  gap: 15px;
+}
+.logo {
+  position: relative;
+  color: rgb(57, 114, 72);
+  font-weight: 400;
+  font-size: 24px;
+}
+.logo::before {
+  position: absolute;
+  content: "BOOKING";
+  color: #000;
+  font-size: 6px;
+  top: 4.5px;
+  right: 0px;
+  font-weight: 500;
+}
+.phone {
+  color: #595959;
+  font-family: "Lora";
+}
+/* End */
+
+/* Title for main pic*/
+
+.pan-pacific {
+  padding: 30px 0 13px 0;
+}
+.main-pic-title {
+  padding-bottom: 25px;
+}
+.logo-phone {
+  gap: 40px;
+}
+.pan-pacific-logo {
+  position: relative;
+}
+.pan-pacific-logo img {
+  width: 54px;
+}
+.pan-pacific-logo p {
+  position: absolute;
+  color: #000;
+  font-size: 11px;
+  top: 45px;
+  right: 0px;
+  font-weight: 500;
+}
+.details {
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  font-size: 22px;
+}
+.phone-location {
+  color: #595959;
+  font-size: 12px;
+  flex-direction: column;
+  gap: 5px;
+}
+.phone-location i {
+  display: flex;
+  background-color: #f3f2ee;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.rating {
+  flex-direction: column;
+  color: #595959;
+  align-items: center;
+  gap: 11px;
+}
+.rate-num {
+  position: relative;
+  font-size: 22px;
+  font-family: "Lora";
+  color: #000;
+}
+.rate-num::after {
+  position: absolute;
+  content: "/5";
+  top: 12px;
+  left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.material-symbols-sharp {
+  color: #ffb200;
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
+}
+.pan-pacific img {
+  padding: 0 0 30px 0;
+}
+.pan-pacific ul {
+  gap: 40px;
+  color: #595959;
+  font-size: 16px;
+}
+.pan-pacific li {
+  position: relative;
+}
+.pan-pacific li:hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(57, 114, 72);
+  top: 31px;
+  right: 0;
+}
+.pan-pacific li:hover {
+  color: rgb(57, 114, 72);
+  cursor: pointer;
+  /* transition: all 1s ease; */
+}
+
+/* End */
+
+/* description - hotel overview */
+
+.hotel-overview {
+  border-bottom: 1px solid #d6d0bc;
+  border-top: 1px solid #d6d0bc;
+}
+
+.description {
+  padding: 30px 0;
+  flex-direction: column;
+  color: #595959;
+  gap: 45px;
+}
+.description h2 {
+  font-size: 21px;
+  color: #000;
+}
+.description p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.room-description {
+  flex-direction: column;
+  gap: 5px;
+}
+.services {
+  flex-direction: column;
+  gap: 5px;
+}
+.room-services,
+.icons,
+.hotel-services,
+.pics,
+.photos,
+.ratings-content,
+.inputs {
+  gap: 20px;
+}
+.all-icons {
+  gap: 45px;
+}
+.one-pic {
+  width: 50%;
+}
+.four-pics {
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 26px;
+  height: 100%;
+}
+.four-pics img {
+  width: 220px;
+  object-fit: cover;
+}
+.ratings-content-first {
+  gap: 20px;
+  border-bottom: 1px solid #d6d0bc;
+}
+
+.rate {
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-size: 16px;
+  color: #000;
+}
+.rate-line {
+  width: 200px;
+  height: 2.5px;
+  background-color: #d7d0bc;
+}
+.rates {
+  color: #000;
+  gap: 15px;
+  justify-content: center;
+}
+/* All without redundancy */
+.rates h3 {
+  position: relative;
+}
+.rates h3:after {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+  background-color: rgb(57, 114, 72);
+  top: 33px;
+  left: 0px;
+}
+/* First */
+.rates:nth-child(2) h3:nth-child(1):after {
+  width: 140px;
+}
+.rates:nth-child(2) h3:nth-child(3):after {
+  width: 180px;
+}
+.rates:nth-child(2) h3:nth-child(5):after {
+  width: 160px;
+}
+/* Second */
+.rates:nth-child(4) h3:nth-child(1):after {
+  width: 173px;
+}
+.rates:nth-child(4) h3:nth-child(3):after {
+  width: 200px;
+}
+.rates:nth-child(4) h3:nth-child(5):after {
+  width: 192px;
+}
+.rate-nums {
+  gap: 30px;
+  justify-content: center;
+}
+.rate-num2 {
+  position: relative;
+  font-size: 15px;
+  font-family: "Lora";
+  color: #000;
+  font-weight: 600;
+}
+.rate-num2::after {
+  position: absolute;
+  content: "/5";
+  top: 10px;
+  left: 20px;
+  font-size: 8px;
+  font-weight: 600;
+}
+.ratings-content img {
+  object-fit: contain;
+  width: 292px;
+}
+.show-review {
+  padding-bottom: 50px;
+  gap: 5px;
+}
+.show-review h2 {
+  color: #595959;
+  margin-bottom: 25px;
+}
+.show-reviw-content {
+  gap: 25px;
+}
+.input-boxes {
+  gap: 20px;
+}
+.input-btn {
+  font-size: 14px;
+  width: 160px;
+  background-color: #fff;
+  position: relative;
+}
+.input-btn input {
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #d6d0bc;
+}
+.input-btn i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.people-reviews {
+  gap: 40px;
+}
+.people-imgs {
+  gap: 15px;
+  align-items: flex-start;
+}
+img {
+  object-fit: contain;
+}
+.img1 {
+  width: 50px;
+}
+.img2 {
+  margin-top: 12px;
+  width: 100px;
+}
+.img3 {
+  margin-top: 50px;
+  width: 150px;
+}
+.written-review {
+  gap: 18px;
+  justify-content: flex-end;
+}
+p {
+  color: #595959;
+  line-height: 21px;
+}
+.written-review h3 {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* End */
+
+/* Let's connect */
+
+.lets-connect {
+  padding: 40px 0;
+}
+.lets-connect p {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.lets-connect h2 {
+  margin-bottom: 7px;
+}
+.input-buttons .input-btn {
+  width: 250px;
+}
+.inputs {
+  gap: 20px;
+}
+.input-buttons {
+  gap: 25px;
+}
+.input-buttons .input-btn:nth-child(3) {
+  width: 520px;
+}
+
+.input-buttons .input-btn:nth-child(4),
+.input-buttons .input-btn:nth-child(4) input {
+  width: 520px;
+}
+.input-buttons .input-btn:nth-child(4) input {
+  padding: 20px 0 120px 8px;
+}
+
+.check-box {
+  color: #595959;
+  padding: 10px 0 20px 0;
+}
+
+.check-box input {
+  margin-right: 5px;
+  background-color: #d6d0bc;
+}
+button {
+  background-color: rgb(57, 114, 72);
+  color: #fff;
+  padding: 9px 29px;
+  font-size: 11px;
+}
+.lets-connect button:hover {
+  background-color: rgba(57, 114, 72, 0.728);
+}
+.lets-connect img {
+  margin: 50px 0 10px 0;
+  object-fit: contain;
+  width: 100vw;
+}
+.footer {
+  background-color: #f3f2ee;
+  padding: 40px 0;
+}
+.contact {
+  color: #595959;
+  align-items: flex-start;
+}
+.footer-col-one {
+  align-items: flex-start;
+  gap: 25px;
+}
+.footer i {
+  background-color: #e7e6e2;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.footer-col-two {
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.footer-col-two h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.buttons {
+  gap: 20px;
+}
+.smart-booking {
+  margin-bottom: 10px;
+}
+.footer ul li {
+  color: #595959;
+  line-height: 30px;
+}
