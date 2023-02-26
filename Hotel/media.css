@@ -1,0 +1,146 @@
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 1110px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 25px, 10px, 10px, 10px;
+  }
+  .rating1 {
+    display: flex;
+  }
+  .ratings-content-first {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ratings-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pan-pacific ul {
+    gap: 20px;
+    color: #595959;
+    font-size: 16px;
+  }
+  .input-boxes {
+    gap: 20px;
+  }
+  .input-btn {
+    font-size: 14px;
+    width: 160px;
+    background-color: #fff;
+    position: relative;
+  }
+  .input-btn input {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #d6d0bc;
+  }
+  .input-btn i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .people-reviews {
+    gap: 40px;
+  }
+  .people-imgs {
+    gap: 15px;
+    align-items: flex-start;
+  }
+  img {
+    object-fit: contain;
+  }
+  .img1 {
+    width: 50px;
+  }
+  .img2 {
+    margin-top: 12px;
+    width: 100px;
+  }
+  .img3 {
+    margin-top: 50px;
+    width: 150px;
+  }
+  .written-review {
+    gap: 18px;
+    justify-content: flex-end;
+  }
+  p {
+    color: #595959;
+    line-height: 21px;
+  }
+  .written-review h3 {
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  /* End */
+
+  /* Let's connect */
+
+  .lets-connect {
+    padding: 40px 0;
+  }
+  .lets-connect p {
+    font-size: 13px;
+  }
+  .lets-connect h2 {
+    margin-bottom: 7px;
+  }
+  .input-buttons .input-btn {
+    width: 250px;
+  }
+  .input-buttons .input-btn:nth-child(3) {
+    width: 350px;
+  }
+
+  .input-buttons .input-btn:nth-child(4),
+  .input-buttons .input-btn:nth-child(4) input {
+    width: 350px;
+  }
+  .footer-col-one {
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .footer i {
+    background-color: #e7e6e2;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+  }
+  .footer-col-two {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .footer-col-two h2 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .buttons {
+    gap: 5px;
+  }
+  .buttons .input-btn {
+    width: 80px;
+  }
+  .buttons button {
+    width: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .smart-booking {
+    margin-bottom: 10px;
+  }
+  .footer ul li {
+    color: #595959;
+    line-height: 20px;
+  }
+}

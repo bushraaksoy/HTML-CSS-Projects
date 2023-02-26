@@ -114,6 +114,9 @@ i {
   justify-content: center;
   border-radius: 2px;
 }
+.ratings-content-first {
+  flex-wrap: wrap;
+}
 .rating {
   flex-direction: column;
   color: #595959;
@@ -373,7 +376,6 @@ p {
 }
 .lets-connect p {
   font-size: 13px;
-  margin-bottom: 25px;
 }
 .lets-connect h2 {
   margin-bottom: 7px;
@@ -402,6 +404,7 @@ p {
 .check-box {
   color: #595959;
   padding: 10px 0 20px 0;
+  align-items: center;
 }
 
 .check-box input {
