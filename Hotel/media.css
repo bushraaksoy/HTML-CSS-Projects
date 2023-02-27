@@ -114,6 +114,7 @@
   }
   .footer-col-one .contact {
     align-items: center;
+    font-size: 14px;
   }
   .footer-col-one .footer i {
     background-color: #e7e6e2;
@@ -147,7 +148,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .smart-booking {
     margin-bottom: 10px;
@@ -155,8 +156,5 @@
   .footer ul li {
     color: #595959;
     line-height: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
   }
 }
