@@ -84,13 +84,16 @@ i {
 .pan-pacific-logo img {
   width: 54px;
 }
-.pan-pacific-logo p {
+.pan-pacific-logo span {
   position: absolute;
   color: #000;
   font-size: 11px;
   top: 45px;
   right: 0px;
   font-weight: 500;
+}
+.main-pic-title {
+  justify-content: space-between;
 }
 .details {
   flex-direction: column;
@@ -214,6 +217,7 @@ i {
   width: 50%;
 }
 .four-pics {
+  display: flex;
   width: 50%;
   flex-wrap: wrap;
   gap: 26px;

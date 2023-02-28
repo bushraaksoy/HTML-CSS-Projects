@@ -7,22 +7,91 @@
   .header {
     padding: 25px, 10px, 10px, 10px;
   }
+  .logo-phone {
+    gap: 23px;
+  }
+  .pan-pacific-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0;
+  }
+  .pan-pacific-logo img {
+    padding: 0px 0px;
+    width: 65px;
+  }
+  .pan-pacific-logo span {
+    color: #000;
+    font-size: 8px;
+    top: 42px;
+    font-weight: 500;
+  }
+  .pan-pacific .rating {
+    position: relative;
+  }
+  .pan-pacific .stars {
+    display: flex;
+  }
+  .pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .one-pic {
+    width: 100%;
+  }
+  .four-pics {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  .four-pics img {
+    width: 160px;
+    object-fit: cover;
+  }
+
   .rating1 {
     display: flex;
   }
+
   .ratings-content-first {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10pxx;
   }
+
   .ratings-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+  .input-boxes {
+    gap: 8px;
+  }
+  .input-btn input {
+    width: 100%;
+    height: 35px;
+    padding: 5px 8px;
+    outline: none;
+    border: 1px solid #d6d0bc;
+  }
   .pan-pacific ul {
     gap: 20px;
     color: #595959;
-    font-size: 16px;
+    font-size: 15px;
+  }
+  .pan-pacific li:hover:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(57, 114, 72);
+    top: 30px;
+    right: 0;
+  }
+  .title {
+    font-size: 18px;
   }
   .input-boxes {
     gap: 20px;
@@ -111,6 +180,7 @@
   .footer-col-one {
     gap: 25px;
     align-items: center;
+    justify-content: flex-end;
   }
   .footer-col-one .contact {
     align-items: center;
@@ -128,7 +198,7 @@
   .footer-col-two {
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 0px;
   }
   .footer-col-two h2 {
     text-align: center;
@@ -143,6 +213,9 @@
   .buttons .input-btn {
     width: 100px;
   }
+  .buttons .input-btn input {
+    width: 100px;
+  }
   .buttons button {
     width: 70px;
     display: flex;
@@ -155,6 +228,6 @@
   }
   .footer ul li {
     color: #595959;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
