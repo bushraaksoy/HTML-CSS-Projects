@@ -48,6 +48,7 @@ label {
 input,
 select,
 textarea {
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
@@ -56,7 +57,7 @@ textarea {
 }
 input,
 textarea {
-  width: 96.8%;
+  box-sizing: border-box;
 }
 select {
   width: 100%;
@@ -76,7 +77,6 @@ input[type="checkbox"] {
   margin-top: 0px;
 }
 input[type="submit"] {
-  width: 100%;
   background-color: #37af65;
   padding: 0.75rem;
 }
