@@ -35,7 +35,20 @@ body {
   border-top-left-radius: 150px;
   border-bottom-left-radius: 150px;
   transform-origin: right center;
-  animation: rotate 1.5s infinite linear;
+  animation: rotate360 1s linear infinite;
+}
+
+.blue-circle-two {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: #088b8b;
+  width: 150px;
+  height: 300px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  transform-origin: left center;
+  animation: rotate180 3s linear 1.5s;
 }
 
 .top-white-circle {
@@ -54,11 +67,20 @@ body {
   justify-content: center;
 }
 
-@keyframes rotate {
+@keyframes rotate360 {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate180 {
+  from {
     transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
